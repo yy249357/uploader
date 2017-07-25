@@ -1,0 +1,40 @@
+/*
+* @Author: yankang
+* @Date:   2017-07-17 11:18:57
+* @Last Modified by:   yankang
+* @Last Modified time: 2017-07-20 10:12:45
+*/
+
+#uploader{
+	position: absolute;
+	width: 100%;
+	right:0; top: 0; bottom: 0; left: 0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+.uploader__preview{
+	margin-left: 45px;
+}
+.uploader__preview img{
+	display: block;
+	width: 300px;
+	height: auto;
+}
+
+.uploader__info{
+	margin-top: 10px;
+}
+
+.uploader__btn{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	background: #337AB7;
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	cursor: pointer;
+}

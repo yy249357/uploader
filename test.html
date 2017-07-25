@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no">
+<title>Document</title>
+<link rel="stylesheet" href="./src/css/uploader.css">
+</head>
+<style>
+.uploader__head{
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	width: 120px;
+	background: #5CB85C;
+	border-radius: 6px;
+	color: #fff;
+}
+</style>
+<body>
+<div class="uploader__head">
+	照片: <span class="btn"><input type="file" id="uploader" multiple/>选择图片</span>
+</div>
+<div class="uploader__preview"></div>
+<script src="./src/js/uploader.js"></script>
+<script>
+uploader('#uploader', {
+    imgWidth: 200,
+    imgHeight: "auto",
+    url: "http://172.16.33.130",
+    contentType: false,
+    limitSize: "1024kb",
+    success: function(){
+    	console.log('success')
+    },
+    error: function(){
+    	console.log('error')
+    }
+})
+</script>
+</body>
+</html>
