@@ -2,10 +2,10 @@
 * @Author: yankang
 * @Date:   2017-07-17 11:18:57
 * @Last Modified by:   yankang
-* @Last Modified time: 2017-07-20 10:12:45
+* @Last Modified time: 2017-08-23 11:28:16
 */
 
-#uploader{
+#uploader, #uploader1, #uploader2, #uploader3, #uploader4, #uploader5, .uploader{
 	position: absolute;
 	width: 100%;
 	right:0; top: 0; bottom: 0; left: 0;
@@ -32,6 +32,20 @@
 	font-size: 16px;
 	border-radius: 4px;
 	background: #337AB7;
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.empty__btn{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	background: #ccc;
+	margin-left: 20px;
 	width: 80px;
 	height: 34px;
 	line-height: 34px;
